@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  gateway:
+    build: .
+    restart: always
+    container_name: "gatewaycontainer"
+    ports:
+      - 8084:8084
+    working_dir: /opt/app
